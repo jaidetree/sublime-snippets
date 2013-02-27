@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+    {% extends "frontend_base.html" %}
+    {% block title %}${1:Page Title}{% endblock title}
+    {% block content %}
+    <div id="page-${2:$TM_FILENAME}" class="page">
+      <div class="content-box">
+        ${3:<div id="sidebar"></div>}
+        <div id="main">
+          $4
+        </div>
+      </div>
+    </div>
+    {% endblock content %}
+    ${5:{% block extend-jquery %}$6{% endblock extend-jquery %}}
+    ${7:{% block extend-external-script %}$8{% endblock extend-external-script %}}
+    {% block extend-script %}
+      $9
+    {% endblock extend-script %}
+]]></content>
+  <tabTrigger>django-vb-draft</tabTrigger>
+</snippet>
